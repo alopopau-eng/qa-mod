@@ -1,23 +1,325 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
   <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>منصة التوثيق القطرية — تعريفية، شروط، سياسة خصوصية وكوكيز</title>
+    <meta name="description" content="الصفحة التعريفية لمنصة التوثيق القطرية - شروط الاستخدام، سياسة الخصوصية، سياسة الكوكيز، ومتطلبات التوافق مع سياسات جوجل الإعلانية." />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Structured data for search engines and ads verification -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "منصة التوثيق القطرية",
+      "url": "https://example.com/",
+      "logo": "https://example.com/logo.png",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+974-0000-0000",
+        "contactType": "customer service",
+        "areaServed": "QA"
+      }],
+      "sameAs": []
+    }
+    </script>
+
+    <style>
+      *{
+        font-family: "Tajawal", sans-serif;
+      }
+      :root{--bg:#f7f8fb;--card:#ffffff;--accent:#0b5cff;--muted:#6b7280;--danger:#d32f2f}
+      *{box-sizing:border-box}
+      body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.6;margin:0;background:var(--bg);color:#111}
+      header{background:linear-gradient(90deg,#fff 0,#f3f6ff 100%);border-bottom:1px solid #e6e9ef}
+      .container{max-width:1100px;margin:0 auto;padding:24px}
+      nav{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+      a{color:var(--accent);text-decoration:none}
+      .brand{display:flex;align-items:center;gap:12px}
+      .brand img{height:48px;width:48px;border-radius:8px;object-fit:cover}
+      .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:28px 0}
+      h1{font-size:1.75rem;margin:0}
+      p.lead{color:var(--muted);margin:8px 0 0}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+      .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.04)}
+      footer{padding:24px 0;color:var(--muted);font-size:0.95rem}
+      .policy-title{margin-top:0}
+      .toc{margin:8px 0 16px;padding:12px;border-radius:8px;background:#fff;border:1px solid #eef2ff}
+      .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white}
+
+      /* cookie banner */
+      .cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;background:var(--card);padding:14px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.08);display:flex;gap:12px;align-items:center;justify-content:space-between;z-index:9999}
+      .cookie-actions{display:flex;gap:8px;align-items:center}
+
+      /* small screens */
+      @media (max-width:720px){.hero{padding:18px 0}.brand img{height:40px;width:40px}}
+
+      /* accessibility focus */
+      a:focus,button:focus{outline:3px solid rgba(11,92,255,0.15);outline-offset:3px}
+    </style>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+    <header>
+      <div class="container">
+        <nav aria-label="القائمة الرئيسية">
+          <div class="brand">
+            <img src="https://example.com/logo.png" alt="شعار منصة التوثيق القطرية" />
+            <div>
+              <strong>منصة التوثيق القطرية</strong>
+              <div style="font-size:0.85rem;color:var(--muted)">توثيق إلكتروني آمن وسهل</div>
+            </div>
+          </div>
+          <div style="margin-left:auto;display:flex;gap:8px">
+            <a href="#about">من نحن</a>
+            <a href="#terms">الشروط</a>
+            <a href="#privacy">الخصوصية</a>
+            <a href="#cookies">الكوكيز</a>
+            <a href="#ads-compliance">توافق الإعلانات</a>
+            <a href="#contact">اتصل بنا</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" id="about">
+        <div>
+          <h1>مرحبًا في منصة التوثيق القطرية</h1>
+          <p class="lead">منصة إلكترونية تهدف إلى تسهيل توثيق المستندات، الخدمات الحكومية والخصخصية بطريقة آمنة، متوافقة مع المعايير المحلية والدولية.</p>
+          <p style="margin-top:12px"><a class="btn" href="#services">عرض الخدمات</a></p>
+        </div>
+      </section>
+
+      <section class="grid" id="services">
+        <div class="card">
+          <h3>خدماتنا</h3>
+          <ul>
+            <li>توثيق المستندات الرسمية</li>
+            <li>التحقق من الهوية إلكترونياً</li>
+            <li>خدمات بيانات للشركات والمؤسسات</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>مزايا</h3>
+          <ul>
+            <li>أمان عالي ومعايير تشفير قوية</li>
+            <li>سجل اتصال وتدقيق مرفق</li>
+            <li>سهل الاستخدام ومصمم بالعربية</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Table of contents for policies -->
+      <section class="card toc" aria-labelledby="policies-heading">
+        <h2 id="policies-heading">ملف السياسات</h2>
+        <p>تحتوي هذه الصفحة على نصوص نموذجية: شروط الاستخدام، سياسة الخصوصية، سياسة الكوكيز، وملاحظات التوافق مع سياسات جوجل الإعلانية — يمكنك تعديل النصوص لتلائم متطلباتك القانونية المحلية.</p>
+        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+          <a href="#terms" class="btn">الشروط العامة</a>
+          <a href="#privacy" class="btn" style="background:#111">سياسة الخصوصية</a>
+          <a href="#cookies" class="btn">سياسة الكوكيز</a>
+        </div>
+      </section>
+
+      <!-- Terms of Service -->
+      <section class="card" id="terms" aria-labelledby="terms-heading">
+        <h2 id="terms-heading" class="policy-title">شروط الاستخدام</h2>
+        <p>آخر تحديث: <time datetime="2025-12-13">13 ديسمبر 2025</time></p>
+        <ol>
+          <li><strong>الموافقة:</strong> باستخدامك للخدمات فإنك توافق على هذه الشروط وتلتزم بها.</li>
+          <li><strong>الخدمات:</strong> نوفر خدمات توثيق ومعالجة بيانات، وقد نوقف الخدمة مؤقتًا للصيانة أو بسبب قوة قاهرة.</li>
+          <li><strong>حساب المستخدم:</strong> أنت مسؤول عن حفظ بيانات حسابك وعدم مشاركة معلومات الدخول مع الغير.</li>
+          <li><strong>القيود:</strong> يُحظر استخدام المنصة في أنشطة غير مشروعة أو لنشر محتوى محظور وفق القوانين المحلية وسياساتنا.</li>
+          <li><strong>الملكية الفكرية:</strong> جميع المحتويات والبرمجيات مملوكة للمنصة أو المصرح لها باستخدامها.</li>
+          <li><strong>إخلاء المسؤولية:</strong> نقدم الخدمات وفق أفضل ما لدينا لكننا لا نضمن خلو النظام من الأخطاء أو انعدام التعطّل.</li>
+          <li><strong>تعديلات:</strong> نحتفظ بالحق في تعديل الشروط مع إعلام المستخدمين بتغييرات جوهرية.</li>
+          <li><strong>تسوية النزاعات:</strong> تخضع هذه الاتفاقية لقوانين دولة قطر وأي نزاع يتم حله في المحاكم المختصة.</li>
+        </ol>
+      </section>
+
+      <!-- Privacy Policy -->
+      <section class="card" id="privacy" aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading" class="policy-title">سياسة الخصوصية</h2>
+        <p>نحن نحترم خصوصيتك ونلتزم بحماية البيانات الشخصية وفقًا لأحكام القانون المعمول به. تنطبق هذه السياسة على جميع البيانات التي تجمعها منصتنا.</p>
+
+        <h3>البيانات التي نجمعها</h3>
+        <ul>
+          <li>المعلومات الشخصية: الاسم، البريد الإلكتروني، رقم الهاتف، الهوية (عند الحاجة للتوثيق).</li>
+          <li>بيانات الاستخدام: سجلات الخادم، عناوين الـ IP، نشاط الويب داخل المنصة.</li>
+          <li>بيانات المدفوعات (إذا قمت بالدفع): نستخدم مزود دفع خارجي ولا نخزن بيانات البطاقة على خوادمنا).</li>
+        </ul>
+
+        <h3>أهداف المعالجة</h3>
+        <ul>
+          <li>توفير الخدمة وتنفيذ طلبات التوثيق</li>
+          <li>الامتثال للالتزامات القانونية ومكافحة الاحتيال</li>
+          <li>تحسين الأداء والتطوير وتجربة المستخدم</li>
+        </ul>
+
+        <h3>حقوق المستخدمين</h3>
+        <p>للمستخدمين الحق في الوصول إلى بياناتهم، طلب تصحيحها أو حذفها ضمن الحدود القانونية. يمكن تقديم طلبات عبر البريد الإلكتروني أدناه.</p>
+
+        <h3>نقل البيانات إلى جهات خارجية</h3>
+        <p>قد نشارك بيانات مع مزودي خدمات (استضافة، دفع إلكتروني، خدمات تحقق هوية) وفق عقود تحمي سرية البيانات. أي مشاركة ستتم بموجب التزامات واضحة.</p>
+
+        <h3>الاحتفاظ بالبيانات</h3>
+        <p>نحتفظ بالبيانات بحسب الحاجة لتقديم الخدمة وللالتزامات القانونية، ونراجع جداول الاحتفاظ بانتظام.</p>
+
+        <h3>أمن البيانات</h3>
+        <p>نطبق سياسات أمان تقنية وإدارية: تشفير TLS، سياسات الوصول الأقل صلاحية، ومراجعات دورية.</p>
+
+        <h3>مسؤول الخصوصية</h3>
+        <p>للاستفسارات أو طلبات حقوق البيانات: <a href="mailto:privacy@example.com">privacy@example.com</a></p>
+      </section>
+
+      <!-- Cookies Policy -->
+      <section class="card" id="cookies" aria-labelledby="cookies-heading">
+        <h2 id="cookies-heading" class="policy-title">سياسة الكوكيز</h2>
+        <p>نستخدم الكوكيز لتحسين تجربة المستخدم، أداء الموقع، وقياس الإعلانات. يمكنك قبول أو رفض الكوكيز غير الضرورية عبر أداة التحكم.</p>
+
+        <h3>أنواع الكوكيز</h3>
+        <ul>
+          <li><strong>الضرورية:</strong> مطلوبة لتشغيل الموقع (جلسة المستخدم، أمن).</li>
+          <li><strong>الأداء والتحليل:</strong> تُستخدم لفهم كيفية استخدام المنصة وتحسينها (مثال: Google Analytics).</li>
+          <li><strong>التسويق/الإعلانات:</strong> تُستخدم لتوجيه إعلانات ملائمة وتقييم أداء الحملات.</li>
+        </ul>
+
+        <h3>إدارة تفضيلات الكوكيز</h3>
+        <p>يمكنك تعديل تفضيلات الكوكيز من خلال البانر الموجود في أسفل الصفحة أو من خلال إعدادات المتصفح.</p>
+      </section>
+
+      <!-- Google Ads Compliance Notes -->
+      <section class="card" id="ads-compliance" aria-labelledby="ads-heading">
+        <h2 id="ads-heading" class="policy-title">توافق مع سياسات جوجل الإعلانية (ملخص)</h2>
+        <p>هذه الفقرة موجهة لمساعدة صاحب الموقع في فهم أهم نقاط التوافق مع سياسات جوجل الإعلانية — ليست بديلاً عن قراءة السياسات الرسمية.</p>
+        <ul>
+          <li>تجنّب المحتوى المحظور: لا تنشر خدمات أو محتوى مرتبط بالمخدرات، التبغ، المقامرة غير المرخصة، أو أي أنشطة غير قانونية.</li>
+          <li>الشفافية: لا تقدم ادعاءات مضللة أو وعودًا غير قابلة للتحقق (مثال: "ضمان توثيق فوري" ما لم يكن صحيحًا).</li>
+          <li>الخصوصية والبيانات: يجب الكشف عن كيفية جمع ومعالجة البيانات الشخصية (تم في سياسة الخصوصية أعلاه).</li>
+          <li>صفحات لاندنج ذات جودة: اجعل صفحات الهبوط واضحة، سهلة التصفح، ومحتواها يتطابق مع الإعلانات.</li>
+          <li>إفصاح عن العلاقات والمدفوعات: إن كنت تعمل مع أطراف ثالثة أو محتوى مدفوع فإفصح عن ذلك.</li>
+          <li>عناوين واضحة: تجنب العناوين المضللة أو استخدام نمط "انقر للإدّعاء".</li>
+        </ul>
+        <p>ملاحظة: راجع سياسات جوجل للإعلانات باللغة الإنجليزية والعربية لتأكيد أي متطلبات خاصة بنوع الإعلان الذي ستستخدمه.</p>
+      </section>
+
+      <!-- Contact -->
+      <section class="card" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">اتصل بنا</h2>
+        <p>للاستفسارات: <a href="mailto:info@example.com">info@example.com</a> — هاتف: +974-0000-0000</p>
+        <p>العنوان: الدوحة، قطر</p>
+      </section>
+
     </main>
+
+    <footer class="container">
+      <div class="card" style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          © <span id="year"></span> منصة التوثيق القطرية — جميع الحقوق محفوظة.
+        </div>
+        <div style="color:var(--muted)">تلتزم المنصة بسياسات الخصوصية ومعايير الإعلانات.</div>
+      </div>
+    </footer>
+
+    <!-- Cookie consent UI (simple, editable) -->
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="تنبيه الكوكيز" hidden>
+      <div style="flex:1">
+        <strong>نستخدم الكوكيز</strong>
+        <div style="color:var(--muted);font-size:0.95rem;margin-top:6px">نستخدم ملفات تعريف الارتباط لتحسين تجربتك، يمكنك قبول أو تخصيص الإعدادات.</div>
+      </div>
+      <div class="cookie-actions">
+        <button id="manageCookies" class="btn" style="background:#fff;color:var(--accent);border:1px solid #e6e9ef">تعديل الإعدادات</button>
+        <button id="acceptCookies" class="btn">قبول الكل</button>
+      </div>
+    </div>
+
+    <!-- Cookie preferences modal (basic) -->
+    <div id="cookieModal" role="dialog" aria-hidden="true" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:10000">
+      <div role="document" style="background:#fff;padding:18px;border-radius:12px;max-width:720px;width:94%;direction:rtl;text-align:right">
+        <h3>تخصيص الكوكيز</h3>
+        <p>اختر أنواع الكوكيز التي تسمح بها:</p>
+        <form id="cookieForm">
+          <label style="display:block;margin:8px 0"><input type="checkbox" name="necessary" disabled checked /> كوكيز ضرورية (مطلوبة)</label>
+          <label style="display:block;margin:8px 0"><input type="checkbox" name="analytics" /> أداء وتحليل</label>
+          <label style="display:block;margin:8px 0"><input type="checkbox" name="marketing" /> تسويق وإعلانات</label>
+          <div style="display:flex;gap:8px;margin-top:12px;justify-content:flex-end">
+            <button type="button" id="saveCookies" class="btn">حفظ</button>
+            <button type="button" id="closeCookieModal" class="btn" style="background:#fff;color:var(--accent);border:1px solid #e6e9ef">إلغاء</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Display current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Simple cookie utilities
+      function setCookie(name,value,days){
+        var d=new Date();d.setTime(d.getTime()+ (days||365)*24*60*60*1000);
+        document.cookie = name+"="+encodeURIComponent(value)+";path=/;SameSite=Lax;expires="+d.toUTCString();
+      }
+      function getCookie(name){
+        var v = document.cookie.match('(^|;)\\s*'+name+'\\s*=\\s*([^;]+)');
+        return v ? decodeURIComponent(v.pop()) : null;
+      }
+
+      // Show banner if no preference stored
+      var cookiePref = getCookie('cookie_pref');
+      var banner = document.getElementById('cookieBanner');
+      var modal = document.getElementById('cookieModal');
+
+      if(!cookiePref){ banner.hidden = false; banner.style.display = 'flex'; }
+
+      document.getElementById('acceptCookies').addEventListener('click', function(){
+        setCookie('cookie_pref', JSON.stringify({analytics:true,marketing:true}), 365);
+        banner.hidden = true; banner.style.display = 'none';
+        // initialize analytics/marketing libs here if needed
+      });
+
+      document.getElementById('manageCookies').addEventListener('click', function(){
+        modal.style.display = 'flex'; modal.setAttribute('aria-hidden','false');
+      });
+      document.getElementById('closeCookieModal').addEventListener('click', function(){ modal.style.display='none'; modal.setAttribute('aria-hidden','true'); });
+      document.getElementById('saveCookies').addEventListener('click', function(){
+        var form = document.getElementById('cookieForm');
+        var analytics = form.elements['analytics'].checked;
+        var marketing = form.elements['marketing'].checked;
+        setCookie('cookie_pref', JSON.stringify({analytics:analytics,marketing:marketing}),365);
+        modal.style.display='none'; modal.setAttribute('aria-hidden','true'); banner.hidden=true; banner.style.display='none';
+        // load analytics/marketing only if consent given
+      });
+
+      // Accessibility: trap focus in modal when open (basic)
+      document.addEventListener('keydown', function(e){
+        if(e.key==='Escape' && modal.style.display==='flex'){ modal.style.display='none'; modal.setAttribute('aria-hidden','true'); }
+      });
+
+      // Example: block loading marketing scripts if user denied
+      (function(){
+        try{
+          var pref = JSON.parse(getCookie('cookie_pref') || '{}');
+          if(pref.analytics){
+            // load analytics script (example)
+            // var s = document.createElement('script'); s.src='https://www.googletagmanager.com/gtag/js?id=GA-XXXX'; document.head.appendChild(s);
+          }
+          if(pref.marketing){
+            // load marketing/ads pixels
+          }
+        }catch(e){console.warn(e)}
+      })();
+    </script>
+
+    <!-- Helpful comments for developer about Google Ads compliance -->
+    <!--
+      نقاط هامة:
+      1) راجع سياسات جوجل الرسمية قبل إنشاء الحملات الإعلانية.
+      2) تأكد من أن صفحات الهبوط لا تحتوي محتوى محظور أو مضلل.
+      3) إذا تطلب الإعلان معالجة بيانات حساسة (مثل معلومات هوية) فتأكد من حصولك على موافقات واضحة وفصل البيانات الحساسة عند الحاجة.
+      4) احتفظ بسجل لسياسات الخصوصية وإمكانية الوصول إليها من كل صفحة.
+    -->
   </body>
 </html>
